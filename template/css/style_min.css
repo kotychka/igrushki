@@ -1,0 +1,207 @@
+/* Reset styles */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	outline: medium none;
+	border: medium none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Main */
+
+* {
+    border: 0 none;
+    margin: 0;
+    outline: medium none;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+	margin-top: 2.4em;
+	font-size: 0.98em;
+	line-height: 1.1em;
+	font-family: 'Rubik', sans-serif;
+    background: #F9EDD1;
+    color: black;
+    font-weight: 500;
+    height: 100%;
+}
+textarea {
+  overflow-x: hidden;
+}
+a {
+    color: black;
+    cursor: pointer;
+}
+img {
+	display: block;
+	max-width: 100%;
+	margin: auto;
+}
+.header_fixed {
+	position: fixed;
+	left: 0;
+	top: 0;
+	min-width: 100%;
+    z-index: 1;
+    /*background: white;*/
+    background: #F9EDD1;
+    /*box-sizing: border-box;*/
+    /*max-height: 2.4em;*/
+}
+.menu_bar, .catalogs, .sliders, .hits, .footer_info, .footer_move {
+	display: flex;
+	justify-content: space-between;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 1em 0;
+}
+.header_fixed .menu_bar {
+	box-shadow: 0 1px 0 0 rgba(16, 18, 20, 0.05);
+	box-sizing: border-box;
+	padding: 0;
+}
+.menu_bar .bar {
+	text-align: center;
+	padding: 0.6em 0.5em 0.7em;
+}
+.bar:first-child {
+    margin-left: -0.5em;
+}
+.bar:last-child {
+    margin-right: -0.5em;
+}
+.header_fixed .mark {
+    margin-right: auto;
+}
+.search {
+    box-sizing: border-box;
+    color: rgba(16, 18, 20, 0.6);
+    left: 50%;
+    margin-left: -10%;
+    padding: 0.5em 0.5em 0.7em;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 20%;
+    z-index: 2;
+}
+.search [type="search"] {
+    background: rgba(16, 18, 20, 0.1) none repeat scroll 0 0;
+    border-radius: 3px;
+    color: rgba(16, 18, 20, 0);
+    cursor: pointer;
+    display: block;
+    height: 1.6em;
+    position: relative;
+    width: 100%;
+}
+.search label {
+    cursor: pointer;
+    display: block;
+    margin-top: -15%;
+}
+.header_logo .menu_bar {
+
+}
+.logo {
+	
+}
+.table {
+    display: table;
+    width: 20%;
+    height: 100%;
+}
+.table_cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.horiz li {
+	display: inline-block;
+	margin: 0 0.3em;
+}
+p.tel {
+	font-size: 1.5em;
+	/*line-height: 1em;*/
+	font-weight: lighter;
+	padding-bottom: 0.5em;
+	color: red;
+	font-family: 'Lobster', cursive;
+}
+p.rezhim {
+	line-height: 1.5em;
+}
+p.sale {
+	margin-top: -40%;
+	font-size: 0.9em;
+}
+
+.menu_bar .main_news {
+	text-align: center;
+	padding: 0 0.5em 0.7em;
+	width: 20%;
+}
+nav {
+	font-family: 'Comfortaa', cursive;
+	font-style: italic;
+	font-weight: 600;
+}
+.catalogs {
+	/*background: white;*/
+	text-align: center;
+}
+.sliders {
+	background: #C9DBF2;
+}
+.slider, .hit {
+	width: 30%;
+	/*height: 30%;*/
+}
+.hits {
+	background: #C9F2D6;
+}
+.social {
+	float: left;
+}
