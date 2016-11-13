@@ -10,7 +10,7 @@
         
     </head>
     <body>
-    <a name="up"></a>
+    
         <form class="search" data-fallback="Search by keyword, #tag or date…">
 			<input id="filter" autocomplete="off" autocorrect="off" spellcheck="false" autocapitalize="none" type="search">
 			<button type="reset"></button>
@@ -41,11 +41,13 @@
             </div>
         </header>
 
+    	<a name="up"></a>
+
         <header class="header_logo">
         	<div class="menu_bar">
                 <div class="bar table logo">
                 	<div class="table__cell">
-                	<img src="template/img/logo.jpg" alt="Логотип">
+	                	<img src="template/img/logo.jpg" alt="Логотип">
                 	</div>
                 </div>
                 <div class="bar nav_cont">
@@ -84,6 +86,12 @@
                         <li><h1><a href="#">Развивающие коврики</a></h1></li>
                         <li><h1><a href="#">Кубики</a></h1></li>
                         <li><h1><a href="#">Конструкторы</a></h1></li>
+                        <!-- <li><h1><a href="#">Мячики</a></h1></li> -->
+                        <li><h1><a href="#">Игрушки с петельками</a></h1></li>
+                        <!-- <li><h1><a href="#">Я сам</a></h1></li> -->
+                        <li><h1><a href="#">Игровые наборы</a></h1></li>
+                        <!-- <li><h1><a href="#">Рукавички</a></h1></li> -->
+                        <!-- <li><h1><a href="#">Подвески</a></h1></li> -->
                     </ul>
                 </div>
             </section>
@@ -129,8 +137,8 @@
             </section>
         </div>
         
-        <footer>
-            <div class="footer_info menu_bar">
+        <footer class="footer_info">
+            <div class="menu_bar">
                 <div class="bar about">
                     <h3>О компании</h3>
                     <ul class="footer_nav">
@@ -150,32 +158,45 @@
                 </div>
                 <div class="bar images">
                     <p class="tel">Телефон: +79312785888</p>
-                    <img src="#" alt="Visa"><br>
-                    <img src="#" alt="MasterCard">
+                    <div class="logos">
+	                    <img src="template/img/visa.png" alt="Visa">
+	                    <img src="template/img/MasterCard.png" alt="MasterCard">
+                    </div>
                 </div>
             </div>
-            <div class="footer_move menu_bar">
+        </footer>
+        <footer class="footer_fixed">    
+            <div class="menu_bar">
                 <div class="bar help">
                     <a href="#"><img src="#" alt="Задать вопрос"></a>
                 </div>
                 <div class="bar status_zakaza">
                     <textarea name="status_zakaza" rows="1" cols="25">Проверить статус заказа</textarea>
                 </div>
-                <div class="bar social_icons">
-                    <div class="social">
-                        <a href="#"><img src="#" alt="Инстаграм"></a>
-                    </div>
-                    <div class="social">
-                        <a href="#"><img src="#" alt="Вконтакте"></a>
-                    </div>
-                    <div class="social">
-                        <a href="#"><img src="#" alt="Viber"></a>
-                    </div>
-                    <div class="social">
-                        <a href="#"><img src="#" alt="WhatsApp"></a>
-                    </div>
+                <div class="bar table logos social_icons">
+	                <!-- <div class="social_groups logos"> -->
+	                	<!-- <p>Мы в сети</p> -->
+	                    <div class="social table__cell">
+	                        <a href="https://www.instagram.com/"><img src="template/img/insta.png" alt="Инстаграм"></a>
+	                    </div>
+	                    <div class="social table__cell">
+	                        <a href="https://www.vk.com"><img src="template/img/vk.png" alt="Вконтакте"></a>
+	                    </div>
+	                <!-- </div> -->
+	                <!-- <div class="social_write logos"> -->
+	                    <!-- <p>Напишите нам</p> -->
+	                    <div class="social table__cell">
+	                        <a href="#"><img src="template/img/viber.png" alt="Viber"></a>
+	                    </div>
+	                    <div class="social table__cell">
+	                        <a href="#"><img src="template/img/WhatsApp.png" alt="WhatsApp"></a>
+	                    </div>
+	                    <div class="social table__cell">
+	                        <a href="#"><img src="template/img/telegram.png" alt="Telegram"></a>
+	                    </div>
+                    <!-- </div> -->
                 </div>
-                <div class="up">
+                <div class="bar up">
                     <a href="#up"><img src="#" alt="Вверх"></a>
                 </div>
             </div>
