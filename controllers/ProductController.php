@@ -1,9 +1,11 @@
 <?php
 
-class ProductController {
+class ProductController 
+{
 	public function actionList()
 	{
-		echo 'ProductController';
+		require_once(ROOT . '/views/product/index.php');
+
 		return true;
 	}
 }
