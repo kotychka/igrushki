@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Магазин игрушек</title>
         <!--<link href="templ/css/reset.css" rel="stylesheet">-->
-        <link href="template/css/style_min.css" type="text/css" rel="stylesheet">
+        <link href="/template/css/style_min.css" type="text/css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Andika|Comfortaa|Didact+Gothic|Fira+Mono|Lobster|Noto+Sans|Philosopher|Rubik" rel="stylesheet"> 
         <!--<link href="templ/css/grid_min.css" rel="stylesheet">-->
         
@@ -47,19 +47,19 @@
         	<div class="menu_bar">
                 <div class="bar table logo">
                 	<div class="table__cell">
-	                	<img src="template/img/logo.jpg" alt="Логотип">
+	                	<img src="/template/img/logo.jpg" alt="Логотип">
                 	</div>
                 </div>
                 <div class="bar nav_cont">
                     <nav>
                         <ul class="navigation horiz">
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#">Акции</a></li>
-                            <li><a href="#">Хиты</a></li>
-                            <li><a href="#">Новинки</a></li>
-                            <li><a href="#">Доставка</a></li>
-                            <li><a href="#">Оплата</a></li>
-                            <li><a href="#">Контакты</a></li>
+                            <li><a href="/about/">О нас</a></li>
+                            <li><a href="/sale/">Акции</a></li>
+                            <li><a href="/hits/">Хиты</a></li>
+                            <li><a href="/new/">Новинки</a></li>
+                            <li><a href="/delivery/">Доставка</a></li>
+                            <li><a href="/payment/">Оплата</a></li>
+                            <li><a href="/contacts/">Контакты</a></li>
                         </ul>
                     </nav>
                     <div class="bar contacts">
@@ -69,7 +69,7 @@
                     </div>
                 </div>
                 <div class="bar main_news">
-                    <img src="template/img/cloud.png" alt="Главная новость">
+                    <img src="/template/img/cloud.png" alt="Главная новость">
                     <p class="sale">Бесплатная доставка<br>в Кудрово!!</p>
                 </div>
             </div>

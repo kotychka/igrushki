@@ -20,8 +20,8 @@
                 <div class="bar images">
                     <p class="tel">Телефон: +79312785888</p>
                     <div class="logos">
-	                    <img src="template/img/visa.png" alt="Visa">
-	                    <img src="template/img/MasterCard.png" alt="MasterCard">
+	                    <img src="/template/img/visa.png" alt="Visa">
+	                    <img src="/template/img/MasterCard.png" alt="MasterCard">
                     </div>
                 </div>
             </div>
@@ -38,22 +38,22 @@
 	                <!-- <div class="social_groups logos"> -->
 	                	<!-- <p>Мы в сети</p> -->
 	                    <div class="social table__cell">
-	                        <a href="https://www.instagram.com/"><img src="template/img/insta.png" alt="Инстаграм"></a>
+	                        <a href="https://www.instagram.com/"><img src="/template/img/insta.png" alt="Инстаграм"></a>
 	                    </div>
 	                    <div class="social table__cell">
-	                        <a href="https://www.vk.com"><img src="template/img/vk.png" alt="Вконтакте"></a>
+	                        <a href="https://www.vk.com"><img src="/template/img/vk.png" alt="Вконтакте"></a>
 	                    </div>
 	                <!-- </div> -->
 	                <!-- <div class="social_write logos"> -->
 	                    <!-- <p>Напишите нам</p> -->
 	                    <div class="social table__cell">
-	                        <a href="#"><img src="template/img/viber.png" alt="Viber"></a>
+	                        <a href="#"><img src="/template/img/viber.png" alt="Viber"></a>
 	                    </div>
 	                    <div class="social table__cell">
-	                        <a href="#"><img src="template/img/WhatsApp.png" alt="WhatsApp"></a>
+	                        <a href="#"><img src="/template/img/WhatsApp.png" alt="WhatsApp"></a>
 	                    </div>
 	                    <div class="social table__cell">
-	                        <a href="#"><img src="template/img/telegram.png" alt="Telegram"></a>
+	                        <a href="#"><img src="/template/img/telegram.png" alt="Telegram"></a>
 	                    </div>
                     <!-- </div> -->
                 </div>

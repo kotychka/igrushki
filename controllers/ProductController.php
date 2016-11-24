@@ -1,10 +1,18 @@
 <?php
 
+include_once ROOT . '/models/Category.php';
+include_once ROOT . '/models/Product.php';
+
 class ProductController 
 {
-	public function actionList()
+	public function actionView($productId)
 	{
-		require_once(ROOT . '/views/product/index.php');
+		$categories = array();
+		$categories = Category::getCategoriesList();
+
+		$product = Product::getProductById($productId);
+
+		require_once(ROOT . '/views/product/view.php');
 
 		return true;
 	}

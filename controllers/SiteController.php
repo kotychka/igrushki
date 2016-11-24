@@ -1,7 +1,7 @@
 <?php
 
 include_once ROOT . '/models/Category.php';
-
+include_once ROOT . '/models/Product.php';
 
 class SiteController
 {
@@ -10,9 +10,15 @@ class SiteController
 		$categories = array();
 		$categories = Category::getCategoriesList();
 
+		$latestProducts = array();
+		$latestProducts = Product::getLatestProducts(4);
+
+		$newProducts = array();
+		$newProducts = Product::getNewProducts(3);
+
 		require_once(ROOT . '/views/site/index.php');
 
 		return true;
-		//3 урок 18-23
+		//4 урок 4-45
 	}
 }
