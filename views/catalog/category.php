@@ -4,15 +4,27 @@
 
             <?php include ROOT . '/views/layouts/catalog.php'; ?>
 
-            <section class="menu_bar">
+            <section class="menu_bar all">
                 <?php foreach ($categoryProducts as $products) : ?>
                     <div class="bar all">
-                        <img src="/template/img/items/doktor_sova.jpg" alt="Игрушка1.1"><br>
-                        <a href="/product/<?php echo $products['id']; ?>" class="name"><?php echo $products['name']; ?></a>
-                        <p class="price"><?php echo $products['price']; ?></p>
-                        <a href="#" class="in_cart">В корзину</a>
+                        <a href="/product/<?php echo $productList['id']; ?>"><img src="/template/img/items/<?php echo $categoryId."/".$products['img']; ?>" alt="Игрушка1.1"></a><br>
+                        <div class="items">
+	                        <div class="items_name">
+	                        	<a href="/product/<?php echo $products['id']; ?>" class="name"><?php echo $products['short_name']; ?></a>
+                        	</div>
+	                        <div class="items_price">
+		                        <p class="price"><?php echo $products['price']; ?> рублей</p>
+		                        <a href="#" class="in_cart">В корзину</a>
+	                        </div>
+                        </div>
                     </div>
-                <?php endforeach; ?>    
+                <?php endforeach; ?>
+                <div class="clear"></div>
+                <div class="pagination">
+	                <?php echo $pagination->get(); ?>
+                </div>
+                <div class="clear"></div>
+
             </section>
 
 

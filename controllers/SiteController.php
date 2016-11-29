@@ -19,6 +19,6 @@ class SiteController
 		require_once(ROOT . '/views/site/index.php');
 
 		return true;
-		//4 урок 4-45
+		//4 урок 14-24
 	}
 }

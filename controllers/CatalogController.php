@@ -2,6 +2,7 @@
 
 include_once ROOT . '/models/Category.php';
 include_once ROOT . '/models/Product.php';
+include_once ROOT . '/components/Pagination.php';
 
 class CatalogController
 {
@@ -11,7 +12,13 @@ class CatalogController
 		$categories = Category::getCategoriesList();
 
 		$latestProducts = array();
-		$latestProducts = Product::getLatestProducts(10);
+		$latestProducts = Product::getLatestProducts(20);
+
+		// $allProducts = array();
+		// $allProducts = Product::getProductsList($page);
+
+		// $total = Product::getTotalProducts();
+		// $pagination = new Pagination($total, $page, Product::SHOW_BY_DEFAULT, 'p');
 
 		// $newProducts = array();
 		// $newProducts = Product::getNewProducts(3);
@@ -27,7 +34,10 @@ class CatalogController
 		$categories = Category::getCategoriesList();
 
 		$categoryProducts = array();
-		$categoryProducts = Product::getProductsListByCategory($categoryId);
+		$categoryProducts = Product::getProductsListByCategory($categoryId, $page);
+
+		$total = Product::getTotalProductsInCategory($categoryId);
+		$pagination = new Pagination($total, $page, Product::SHOW_BY_DEFAULT, 'p');
 
 		require_once(ROOT . '/views/catalog/category.php');
 
