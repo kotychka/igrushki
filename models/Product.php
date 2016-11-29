@@ -16,7 +16,7 @@ class Product
 
 		$productList = array();
 
-		$result = $db->query('SELECT id, short_name, price, img, is_new FROM product '
+		$result = $db->query('SELECT id, short_name, category_id, price, img, is_new FROM product '
 			. 'WHERE status = "1" '
 			. 'ORDER BY id DESC '
 			. 'LIMIT ' . $count);
@@ -26,6 +26,7 @@ class Product
 		while ($row = $result->fetch()) {
 			$productList[$i]['id'] = $row['id'];
 			$productList[$i]['short_name'] = $row['short_name'];
+			$productList[$i]['category_id'] = $row['category_id'];
 			$productList[$i]['price'] = $row['price'];
 			$productList[$i]['img'] = $row['img'];
 			$productList[$i]['is_new'] = $row['is_new'];
@@ -157,7 +158,7 @@ class Product
 			return $products;
 	}
 
-	
+
 
 
 }

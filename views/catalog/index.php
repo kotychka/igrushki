@@ -7,7 +7,13 @@
             <section class="menu_bar all">
                 <?php foreach ($latestProducts as $productList) : ?>
                     <div class="bar all">
-                        <a href="/product/<?php echo $productList['id']; ?>"><img src="/template/img/items/doktor_sova.jpg" alt="Игрушка1.1"></a><br>
+                        <a href="/product/<?php echo $productList['id']; ?>">
+                            <?php if ($productList['img'] != NULL) : ?>
+                                <img src="/template/img/items/<?php echo $productList['category_id']."/".$productList['img']; ?>" alt="Игрушка1.1">
+                            <?php else : ?>
+                                    <img src="/template/img/items/no-image.png" alt="<?php echo $productList['short_name']; ?>">
+                            <?php endif; ?>
+                        </a><br>
                         <div class="items">
                             <div class="items_name">
                                 <a href="/product/<?php echo $productList['id']; ?>" class="name"><?php echo $productList['short_name']; ?></a>

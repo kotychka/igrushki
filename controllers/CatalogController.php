@@ -12,7 +12,7 @@ class CatalogController
 		$categories = Category::getCategoriesList();
 
 		$latestProducts = array();
-		$latestProducts = Product::getLatestProducts(20);
+		$latestProducts = Product::getLatestProducts(200);
 
 		// $allProducts = array();
 		// $allProducts = Product::getProductsList($page);
