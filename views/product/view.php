@@ -6,14 +6,20 @@
 
             <section class="menu_bar">                
                     <div class="bar one">
-                    	<h3><?php echo $product['name']; ?></h3>
-                        <div class="img">
-                        	<img src="/template/img/items/doktor_sova.jpg" alt="Игрушка1.1">
-                    	</div>
-                    	<div class="rest">
-	                        <p class="description"><?php echo $product['description']; ?></p>
-	                        <p class="price"><?php echo $product['price']; ?></p>
-	                        <a href="#" class="in_cart">В корзину</a>
+                    	<div class="one_name"><h3><?php echo $product['name']; ?></h3></div>
+                    	<div class="one_descr">
+	                        <div class="img">
+	                        	<?php if ($product['img'] != NULL) : ?>
+			                        <img src="/template/img/items/<?php echo $product['category_id']."/".$product['img']; ?>" alt="<?php echo $product['short_name']; ?>">
+		                        <?php else : ?>
+		                        	<img src="/template/img/items/no-image.png" alt="<?php echo $product['short_name']; ?>">
+	                        	<?php endif; ?>
+	                    	</div>
+	                    	<div class="rest">
+		                        <div class="description"><?php echo $product['description']; ?></div>
+		                        <div class="price"><?php echo $product['price']; ?></div>
+		                        <div class="in_cart"><a href="#" class="in_cart">В корзину</a></div>
+	                        </div>
                         </div>
                     </div> 
             </section>

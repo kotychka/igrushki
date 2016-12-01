@@ -31,10 +31,10 @@
                         <textarea class="search" name="search" rows="1" cols="45">Поиск</textarea>
                     </div> -->
                     <div class="bar lk">
-                        <a href="#">Личный кабинет</a>
+                        <a href="/cabinet">Личный кабинет</a>
                     </div>
                     <div class="bar cart">
-                        <a href="#">Корзина</a>
+                        <a href="/cart">Корзина</a>
 
                     </div>
                 <!--</div>-->
@@ -47,7 +47,7 @@
         	<div class="menu_bar">
                 <div class="bar table logo">
                 	<div class="table__cell">
-	                	<img src="/template/img/logo.jpg" alt="Логотип">
+	                	<a href="/"><img src="/template/img/logo.jpg" alt="Логотип"></a>
                 	</div>
                 </div>
                 <div class="bar nav_cont">

@@ -19,7 +19,7 @@
                                 <a href="/product/<?php echo $productList['id']; ?>" class="name"><?php echo $productList['short_name']; ?></a>
                             </div>
                             <div class="items_price">
-                                <p class="price"><?php echo $productList['price']; ?></p>
+                                <p class="price"><?php echo $productList['price']; ?> руб.</p>
                                 <a href="#" class="in_cart">В корзину</a>
                             </div>
                         </div>

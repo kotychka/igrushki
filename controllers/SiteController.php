@@ -1,8 +1,5 @@
 <?php
 
-include_once ROOT . '/models/Category.php';
-include_once ROOT . '/models/Product.php';
-
 class SiteController
 {
 	public function actionIndex()
@@ -14,11 +11,11 @@ class SiteController
 		$latestProducts = Product::getLatestProducts(4);
 
 		$newProducts = array();
-		$newProducts = Product::getNewProducts(3);
+		$newProducts = Product::getNewProducts(5);
 
 		require_once(ROOT . '/views/site/index.php');
 
 		return true;
-		//4 урок 14-24
+		//5 урок 02-08
 	}
 }
