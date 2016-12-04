@@ -134,6 +134,34 @@ class Product
 		return $row['count'];
 	}
 
+	public static function getProductsByIds($idsArray)
+	{
+		
+
+		$db = Db::getConnection();
+
+		$idsString = implode(',', $idsArray);
+
+		$sql = "SELECT * FROM product WHERE status='1' AND id IN ($idsString)";
+
+		$result = $db->query($sql);
+		$result->setFetchMode(PDO::FETCH_ASSOC);
+
+		$i = 0;
+		$products = array();
+		while ($row = $result->fetch()) {
+			$products[$i]['id'] = $row['id'];
+			$products[$i]['short_name'] = $row['short_name'];
+			$products[$i]['price'] = $row['price'];
+			$products[$i]['code'] = $row['code'];
+			$products[$i]['category_id'] = $row['category_id'];
+			$i++;
+		}
+
+		return $products;
+		
+	}
+
 	public static function getProductsList($page = 1)
 	{
 			$page = intval($page);

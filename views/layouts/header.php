@@ -31,10 +31,15 @@
                         <textarea class="search" name="search" rows="1" cols="45">Поиск</textarea>
                     </div> -->
                     <div class="bar lk">
-                        <a href="/cabinet">Личный кабинет</a>
+                    <?php if (User::isGuest()): ?>
+                        <a href="/user/login">Вход</a>
+                    <?php else: ?>
+                        <a href="/cabinet">Кабинет</a>
+                        <a href="/user/logout">Выход</a>
+                    <?php endif; ?>    
                     </div>
                     <div class="bar cart">
-                        <a href="/cart">Корзина</a>
+                        <a href="/cart">Корзина (<span  id="cart-count"><?php echo Cart::countItems(); ?></span>)</a>
 
                     </div>
                 <!--</div>-->

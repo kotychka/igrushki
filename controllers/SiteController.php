@@ -16,6 +16,42 @@ class SiteController
 		require_once(ROOT . '/views/site/index.php');
 
 		return true;
-		//5 урок 02-08
+		//6 урок 20-41
+	}
+
+	public function actionContacts()
+	{
+		$userEmail = '';
+		$userText = '';
+		$result = false;
+
+		if (isset($_POST['submit'])) {
+			$userEmail = $_POST['userEmail'];
+			$userText = $_POST['userText'];
+
+			$errors = false;
+
+			if (!User::checkEmail($userEmail)) {
+				$errors[] = "Неправильный email";
+			}
+			if ($errors == false) {
+				$adminEmail = '2785888@mail.ru';
+				$subject = 'Тема письма';
+				$message = 'Текст: {$userText} . От {$userEmail}';
+				$result = mail($adminEmail, $subject, $message);
+				$result = true;
+			}
+		}
+
+		require_once(ROOT . '/views/site/contacts.php');
+
+		return true;
+
+		// $mail = '2785888@mail.ru';
+		// $subject = 'Тема письма';
+		// $message = 'Содержание письма';
+		// $result = mail($mail, $subject, $message);
+
+		// die;
 	}
 }

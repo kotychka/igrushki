@@ -20,7 +20,7 @@
                         	</div>
 	                        <div class="items_price">
 		                        <p class="price"><?php echo $products['price']; ?> руб.</p>
-		                        <a href="#" class="in_cart">В корзину</a>
+		                        <a href="№" data-id="<?php echo $products['id']; ?>" class="in_cart">В корзину</a>
 	                        </div>
                         </div>
                     </div>
