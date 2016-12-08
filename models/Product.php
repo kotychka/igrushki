@@ -36,9 +36,9 @@ class Product
 		return $productList;
 	}
 
-	public static function getNewProducts($count = self::SHOW_BY_DEFAULT)
+	public static function getNewProducts()
 	{
-		$count = intval($count);
+		// $count = intval($count);
 
 		$db = Db::getConnection();
 
@@ -46,8 +46,7 @@ class Product
 
 		$result = $db->query('SELECT id, short_name, category_id, price, img, is_new FROM product '
 			. 'WHERE status = "1" AND is_new = "1" '
-			. 'ORDER BY id DESC '
-			. 'LIMIT ' . $count);
+			. 'ORDER BY id DESC ');
 
 		$i = 0;
 		while ($row = $result->fetch()) {

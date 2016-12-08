@@ -4,19 +4,19 @@ class SiteController
 {
 	public function actionIndex()
 	{
-		$categories = array();
+		// $categories = array();
 		$categories = Category::getCategoriesList();
 
-		$latestProducts = array();
+		// $latestProducts = array();
 		$latestProducts = Product::getLatestProducts(4);
 
-		$newProducts = array();
-		$newProducts = Product::getNewProducts(5);
+		// $sliderProducts = array();
+		$sliderProducts = Product::getNewProducts();
 
 		require_once(ROOT . '/views/site/index.php');
 
 		return true;
-		//6 урок 20-41
+		//8 урок 17-41
 	}
 
 	public function actionContacts()

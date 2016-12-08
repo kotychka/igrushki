@@ -18,6 +18,7 @@
             					<th>Название</th>
             					<th>Количество, шт.</th>
             					<th>Стоимость, руб.</th>
+            					<th>Удалить товар</th>
             				</tr>
             				<?php foreach ($products as $product): ?>
 								<tr>
@@ -25,6 +26,7 @@
 									<td><?php echo $product['short_name']; ?></td>
 									<td><?php echo $productsInCart[$product['id']]; ?></td>
 									<td><?php echo $product['price']; ?></td>
+									<td><a href="/cart/delete/<?php echo $product['id'];?>">X</a></td>
 								</tr>
 							<?php endforeach; ?>
 								<tr>
@@ -32,6 +34,7 @@
 									<td><?php echo $totalPrice; ?></td>
 								</tr>
             			</table>
+            			<a href="/cart/checkout">Оформить заказ</a>
         			<?php else: ?>
         				<p>Корзина пуста</p>
     				<?php endif; ?>

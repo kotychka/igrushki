@@ -124,6 +124,17 @@ class User
 			return true;		
 		return false;
 	}
-	
+
+	public static function checkPhone($userPhone)
+	{
+		if (strlen($userPhone) >= 10) {
+			if (strlen($userPhone) <= 15) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+		return false;
+	}
 
 }
