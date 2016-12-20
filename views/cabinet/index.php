@@ -13,6 +13,7 @@
             		<ul>
             			<li><a href="/cabinet/edit">Редактировать данные</a></li>
             			<li><a href="/cabinet/history">Список покупок</a></li>
+                              <li><a href="/admin">Админ-панель</a></li>
             		</ul>
 
             	</div>

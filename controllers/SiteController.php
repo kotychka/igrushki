@@ -8,15 +8,15 @@ class SiteController
 		$categories = Category::getCategoriesList();
 
 		// $latestProducts = array();
-		$latestProducts = Product::getLatestProducts(4);
+		$latestProducts = Product::getLatestProducts(6);
 
 		// $sliderProducts = array();
 		$sliderProducts = Product::getNewProducts();
 
-		require_once(ROOT . '/views/site/index.php');
+		require_once(ROOT . '/views/site/New.php');
 
 		return true;
-		//8 урок 17-41
+		//8 урок 30-41
 	}
 
 	public function actionContacts()

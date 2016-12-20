@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Магазин игрушек</title>
+        <link href="/template/css/bootstrap.min.css" rel="stylesheet">
         <link href="/template/css/style_min.css" type="text/css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Andika|Comfortaa|Didact+Gothic|Fira+Mono|Lobster|Noto+Sans|Philosopher|Rubik" rel="stylesheet"> 
         
